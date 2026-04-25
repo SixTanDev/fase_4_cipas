@@ -18,6 +18,7 @@ Debe incluir:
 - un método presentarse que retorne un mensaje de presentación
 - manejo de excepciones usando try y except
 - manejo de error  al validar dato de entrada de la edad sea un entero
+- commit prueba
 El objetivo es practicar clases, objetos, métodos, validaciones y manejo básico de errores antes de subir el proyecto a GitHub.
 
 """
