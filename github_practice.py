@@ -17,7 +17,7 @@ Debe incluir:
 - un método mostrar_datos que retorne la información del estudiante
 - un método presentarse que retorne un mensaje de presentación
 - manejo de excepciones usando try y except
-
+- manejo de error  al validar dato de entrada de la edad sea un entero
 El objetivo es practicar clases, objetos, métodos, validaciones y manejo básico de errores antes de subir el proyecto a GitHub.
 
 """
@@ -25,6 +25,8 @@ class Estudiante:
     def __init__(self, nombre, edad, codigo, carrera):
         if not nombre or not codigo or not carrera:
             raise ValueError("Los campos nombre, código y carrera no pueden estar vacíos.")
+        if not isinstance(edad, int):
+            raise ValueError("La edad debe ser un número entero.")
         if edad <= 0:
             raise ValueError("La edad debe ser mayor que cero.")
 
